@@ -4,7 +4,7 @@ class ArrowFunc extends Component {
   constructor(props){
     super(props);
 
-    //example 1 - combined array which gives array in array
+ 
     console.log('--------example 1 -----------');
     
     // function add(a,b){
@@ -17,7 +17,7 @@ class ArrowFunc extends Component {
  //    	return a + b;
  //    }
 
-    const add = (a,b) => (a + b);
+    const add = (a,b) => (a + b); //arrow function implicit return
 	
 	console.log(add(5,6));
 

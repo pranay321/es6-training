@@ -3,6 +3,7 @@ import './App.css';
 import LetConst from './LetConst';
 import SpredOperator from './SpredOperator';
 import ArrowFunc from './ArrowFunc';
+import Destructuring from './Destructuring';
 
 class App extends Component {
   constructor(props){
@@ -28,36 +29,36 @@ class App extends Component {
 
 
 
-    function calculateBill(total, tax, tip) {
-        if(tax === undefined) {
-            tax = 0.13;
-        }
-        if(tip === undefined) {
-            tip = 0.15;
-            }
-        return total + (total * tax) + (total * tip);
-    }
-
-    const totalBill = calculateBill(100);
-    console.log(totalBill);
-
-
-    //with default argument
-
     // function calculateBill(total, tax, tip) {
-    //     return total + (total * (tax || 0.13)) + (total * (tip || 0.15));
+    //     if(tax === undefined) {
+    //         tax = 0.13;
+    //     }
+    //     if(tip === undefined) {
+    //         tip = 0.15;
+    //         }
+    //     return total + (total * tax) + (total * tip);
     // }
 
     // const totalBill = calculateBill(100);
     // console.log(totalBill);
 
 
+    //with default argument
+
+    function calculateBill(total, tax, tip) {
+        return total + (total * (tax || 0.13)) + (total * (tip || 0.15));
+    }
+
+    const totalBill = calculateBill(100);
+    console.log(totalBill);
+
+
   }
   render() {
     const letconst = false;
     const spredOperator = false;
-    const arrowFunc = true;
-    //const destructuring = false;
+    const arrowFunc = false;
+    const destructuring = true;
 
     return (
       <div className="App">
@@ -67,6 +68,7 @@ class App extends Component {
         { letconst && <LetConst/>}
         { spredOperator && <SpredOperator/>}
         { arrowFunc && <ArrowFunc/>}
+        { destructuring && <Destructuring/>}
       </div>
     );
   }
