@@ -15,17 +15,18 @@ class App extends Component {
 
     const arrData = ["one","two","three","four"];
 
-    console.log("1 - ",msg.startsWith("Hello"));
+    // console.log("1 - ",msg.startsWith("Hello"));
 
-    console.log("2 - ",msg.endsWith("react"));
+    // console.log("2 - ",msg.endsWith("react"));
 
-    console.log("3 - ",arrData.includes("three"));
+    // console.log("3 - ",arrData.includes("three"));
 
     //template literals
 
-    const name = "";
 
-    console.log(`Hello ${name || `pranay`}`);
+    
+
+   // console.log(`Hello ${name || `pranay`}`);
 
 
 
@@ -58,13 +59,16 @@ class App extends Component {
     const letconst = false;
     const spredOperator = false;
     const arrowFunc = false;
-    const destructuring = true;
+    const destructuring = false;
+
+    const msg2 = `Hello ${this.props.name || `pranay`}`;
 
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
+        <h1>{msg2}</h1>
         { letconst && <LetConst/>}
         { spredOperator && <SpredOperator/>}
         { arrowFunc && <ArrowFunc/>}
