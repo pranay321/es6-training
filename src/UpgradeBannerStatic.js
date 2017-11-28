@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import './upgradebanner.css';
+//import './upgradebanner.css';
 
 const UpgradeBannerStatic = props => {
     return (

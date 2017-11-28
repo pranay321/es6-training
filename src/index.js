@@ -1,59 +1,47 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 
-class TodoList extends Component{
-	constructor(){
-		super();
+class Hello extends React.Component{
+	constructor(props){
+		super(props);
 
-		this.state = {
-		tasks: [{
-				name: 'react component',
-				completed: false,
-			},
-			{
-				name: 'state and props',
-				completed: false,
-			},
-			{
-				name: 'event handling',
-				completed: false,
-			}],
-		};
-
-		this.toggleTodo = this.toggleTodo.bind(this);
+		console.log(this.props);
 	}
-
-	toggleTodo(index){
-		 const tasks = this.state.tasks;
-		 const task = tasks[index];
-		 task.completed = !task.completed;
-		 this.setState({
-		 	tasks:tasks,
-		 });
-	}
-
-
 	render(){
-		return(
+		return (
 			<div>
-				<ul>
-					{this.state.tasks.map((task,index) => <TodoItem items={task} key={index} clickHandler={this.toggleTodo} index={index} />)}
-				</ul>
-				<br/>
+				<h1>Hello</h1>
+				<World/>
 			</div>
 		)
 	}
 }
 
 
-class TodoItem extends Component{
+// const Hello = (props) => (
+// 	<div>
+// 		<h1>Hello {props.name}</h1>
+// 	</div>
+// )
+
+class World extends React.Component{
 	render(){
-		return(
-			<li onClick={() => this.props.clickHandler(this.props.index)} className={this.props.items.completed ? 'completed' : ''}>
-				{this.props.items.name}
-			</li>
+		return (
+			<div>
+				<h1>World</h1>
+			</div>
 		)
 	}
 }
-ReactDOM.render(<TodoList/>, document.getElementById('root'));
+
+class HelloWorld extends React.Component {
+	render(){
+		return (
+			<section>
+				<Hello name="pranay"/>
+			</section>
+		)
+	}
+}
+
+ReactDOM.render(<HelloWorld/>, document.getElementById('root'));

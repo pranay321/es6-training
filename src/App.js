@@ -6,6 +6,8 @@ import ArrowFunc from './ArrowFunc';
 import Destructuring from './Destructuring';
 import UpgradeBanner from './UpgradeBanner';
 import UpgradeBannerStatic from './UpgradeBannerStatic';
+import PureComponentSample from './PureComponentSample';
+
 
 class App extends Component {
   constructor(props){
@@ -63,8 +65,9 @@ class App extends Component {
     const arrowFunc = false;
     const destructuring = false;
     const msg2 = `Hello ${this.props.name || `pranay`}`;
-    const upgradebannerstatic = true;
-    const upgradebanner = true;
+    const upgradebannerstatic = false;
+    const upgradebanner = false;
+    const prComponent = true;
 
     return (
       <div className="App">
@@ -78,6 +81,7 @@ class App extends Component {
         { destructuring && <Destructuring/>}
         { upgradebannerstatic && <UpgradeBannerStatic />}
         { upgradebanner && <UpgradeBanner />}
+        {prComponent && <PureComponentSample/> }
       </div>
     );
   }
