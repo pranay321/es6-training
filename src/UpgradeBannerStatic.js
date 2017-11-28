@@ -1,37 +1,48 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import s from './styles';
+import './upgradebanner.css';
 
 const UpgradeBannerStatic = props => {
     return (
-      <s.UpgradeBanner>
-        <s.Header>
-          <s.Title>Connect with Matches directly</s.Title>
-          <s.CloseBtn />
-        </s.Header>
-        <s.Benefits>
-          <s.Benfit name="email">
-            <s.Icon name="email" />
-            <s.Desc>Send Email</s.Desc>
-          </s.Benfit>
-          <s.Benfit name="chat">
-            <s.Icon name="chat" />
-            <s.Desc>Chat</s.Desc>
-          </s.Benfit>
-          <s.Benfit name="mobile">
-            <s.Icon name="mobile" />
-            <s.Desc>Call / Send SMS</s.Desc>
-          </s.Benfit>
-        </s.Benefits>
-        <s.UpgradeLink href="https://www.shaadi.com/payment?source=listing_banner" target="_blank">
-          Upgrade Now
-        </s.UpgradeLink>
-        <s.OtherBenefitsTitle>Other Benefits</s.OtherBenefitsTitle>
-        <s.OtherBenefit>
-          - View college and professional details<br />
-          - Make your profile stand out in search results
-        </s.OtherBenefit>
-      </s.UpgradeBanner>
+      <div id="banner_outer_wrap">
+        <div className="search_pg_bann " id="interrupt_banner">
+          <div className="search_pg_banup"></div>
+          <div className="bann_head">
+            Connect with Matches directly
+          </div>
+          <div className="search_contact">
+            <div className="search_mail">
+              <div className="search_image">
+                <div className="srch_mail_icon"></div>
+              </div>
+              <p className="search_txt">Send Email</p>
+            </div>
+            <div className="search_mid">
+              <div className="search_image">
+                <div className="srch_chat_icon"></div>
+              </div>
+              <p className="search_txt">Chat</p>
+            </div>
+            <div className="search_cal">
+              <div className="search_image">
+                <div className="srch_phn_icon"></div>
+              </div>
+              <p className="search_txt">Call / Send SMS</p>
+            </div>
+          </div>
+          <div className="srch_dwngrad">
+            <a href="https://www.shaadi.com/payment?source=listing_banner" className="srch_upgradebtn" id="banner_upgrade_btn" target="_blank">Upgrade Now</a>
+            <p className="srch_benefithead">Other Benefits</p>
+            <p className="srch_benefitlist">
+              - View college and professional details<br />
+              - Make your profile stand out in search results
+            </p>
+            <div className="srch_pg_bandwn"></div>
+          </div>
+          <div className="srch_close" id="banner_close"></div>
+        </div>
+        <div className="spacer_7"></div>
+    </div>
     );
 };
 

@@ -8,7 +8,7 @@ styles.UpgradeBanner = styled.div`
   padding-top: 16px;
   text-align: center;
   background: #fff;
-  width: ${props => (props.type === 'list' ? 730 : 700)}px;
+  width: 730px;
   margin: 20px auto 0;
 `;
 

@@ -61,7 +61,7 @@ class App extends Component {
     const spredOperator = false;
     const arrowFunc = false;
     const destructuring = false;
-    const upgradebannerstatic = false;
+    const upgradebannerstatic = true;
     const upgradebanner = true;
 
     return (
