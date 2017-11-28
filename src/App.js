@@ -4,6 +4,8 @@ import LetConst from './LetConst';
 import SpredOperator from './SpredOperator';
 import ArrowFunc from './ArrowFunc';
 import Destructuring from './Destructuring';
+import UpgradeBanner from './UpgradeBanner';
+import UpgradeBannerStatic from './UpgradeBannerStatic';
 
 class App extends Component {
   constructor(props){
@@ -60,8 +62,9 @@ class App extends Component {
     const spredOperator = false;
     const arrowFunc = false;
     const destructuring = false;
-
     const msg2 = `Hello ${this.props.name || `pranay`}`;
+    const upgradebannerstatic = true;
+    const upgradebanner = true;
 
     return (
       <div className="App">
@@ -73,6 +76,8 @@ class App extends Component {
         { spredOperator && <SpredOperator/>}
         { arrowFunc && <ArrowFunc/>}
         { destructuring && <Destructuring/>}
+        { upgradebannerstatic && <UpgradeBannerStatic />}
+        { upgradebanner && <UpgradeBanner />}
       </div>
     );
   }
