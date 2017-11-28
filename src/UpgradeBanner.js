@@ -4,10 +4,10 @@ import s from './styles';
 
 const UpgradeBanner = props => {
     return (
-      <s.UpgradeBanner type={props.type}>
+      <s.UpgradeBanner>
         <s.Header>
           <s.Title>Connect with Matches directly</s.Title>
-          <s.CloseBtn onClick={() => props.onCloseClick()} />
+          <s.CloseBtn />
         </s.Header>
         <s.Benefits>
           <s.Benfit name="email">
@@ -23,7 +23,7 @@ const UpgradeBanner = props => {
             <s.Desc>Call / Send SMS</s.Desc>
           </s.Benfit>
         </s.Benefits>
-        <s.UpgradeLink href="https://www.shaadi.com/payment?source=listing_banner" target="_blank">
+        <s.UpgradeLink href="https://www.shaadi.com/payment?source=listing_banner" target="_blank" isVisible={true}>
           Upgrade Now
         </s.UpgradeLink>
         <s.OtherBenefitsTitle>Other Benefits</s.OtherBenefitsTitle>
@@ -33,12 +33,6 @@ const UpgradeBanner = props => {
         </s.OtherBenefit>
       </s.UpgradeBanner>
     );
-};
-
-UpgradeBanner.propTypes = {
-  type: PropTypes.oneOf(['list', 'grid']).isRequired,
-  isVisible: PropTypes.bool.isRequired,
-  onCloseClick: PropTypes.func.isRequired,
 };
 
 export default UpgradeBanner;

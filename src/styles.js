@@ -70,7 +70,7 @@ styles.Desc = styled.div`
 `;
 
 styles.UpgradeLink = styled.a`
-  display: block;
+  display: ${props => (props.isVisible ? 'block' : 'none')};
   font-size: 16px;
   padding: 10px 20px;
   cursor: pointer;
