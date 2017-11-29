@@ -10,18 +10,18 @@ const UpgradeBanner = props => {
           <s.CloseBtn />
         </s.Header>
         <s.Benefits>
-          <s.Benfit name="email">
-            <s.Icon name="email" />
+          <s.EmailBenfit>
+            <s.EmailIcon />
             <s.Desc>Send Email</s.Desc>
-          </s.Benfit>
-          <s.Benfit name="chat">
-            <s.Icon name="chat" />
+          </s.EmailBenfit>
+          <s.ChatBenfit>
+            <s.ChatIcon />
             <s.Desc>Chat</s.Desc>
-          </s.Benfit>
-          <s.Benfit name="mobile">
-            <s.Icon name="mobile" />
+          </s.ChatBenfit>
+          <s.MobileBenfit>
+            <s.MobileIcon />
             <s.Desc>Call / Send SMS</s.Desc>
-          </s.Benfit>
+          </s.MobileBenfit>
         </s.Benefits>
         <s.UpgradeLink href="https://www.shaadi.com/payment?source=listing_banner" target="_blank" isVisible={true}>
           Upgrade Now

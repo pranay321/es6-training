@@ -40,28 +40,42 @@ styles.CloseBtn = styled.button`
 
 styles.Benefits = styled.div`margin: 28px 0 19px;`;
 
-styles.Benfit = styled.div`
+styles.EmailBenfit = styled.div`
   display: inline-block;
-  padding: ${props =>
-    props.name === 'email'
-      ? '0 34px 0 60px'
-      : props.name === 'chat' ? '0 40px 0 41px' : props.name === 'mobile' ? '0 36px 0 37px' : '80px'};
-  background: ${props =>
-    props.name === 'email'
-      ? ''
-      : props.name === 'chat'
-        ? 'url(/assets/search-bann-border.gif) no-repeat left center'
-        : props.name === 'mobile' ? 'url(/assets/search-bann-border.gif) no-repeat left center' : ''};
+  padding: 0 34px 0 60px;
 `;
 
-styles.Icon = styled.div`
-  height: ${props => (props.name === 'email' ? '32px' : props.name === 'chat' ? '42px' : props.name === 'mobile' ? '39px' : '32px')};
-  width: ${props => (props.name === 'email' ? '80px' : props.name === 'chat' ? '42px' : props.name === 'mobile' ? '80px' : '80px')};
+styles.EmailIcon = styled.div`
+  height: 32px;
+  width: 80px;
   margin-bottom: 17px;
-  background-image: url(/assets/search-bann-sprite.png);
-  background-repeat: no-repeat;
-  background-position: ${props =>
-    props.name === 'email' ? '20px top' : props.name === 'chat' ? 'left -38px' : props.name === 'mobile' ? '40px -87px' : '20px top'};
+  background: url(https://img2.shaadi.com/community/images/search-bann-sprite.png) no-repeat 20px top;
+`;
+
+styles.ChatBenfit = styled.div`
+  display: inline-block;
+  padding: 0 40px 0 41px;
+  background: url(https://img2.shaadi.com/community/images/search-bann-border.gif) no-repeat left center;
+`;
+
+styles.ChatIcon = styled.div`
+  height: 42px;
+  width: 42px;
+  margin-bottom: 17px;
+  background: url(https://img2.shaadi.com/community/images/search-bann-sprite.png) no-repeat left -38px;
+`;
+
+styles.MobileBenfit = styled.div`
+  display: inline-block;
+  padding: 0 36px 0 37px;
+  background: url(https://img2.shaadi.com/community/images/search-bann-border.gif) no-repeat left center;
+`;
+
+styles.MobileIcon = styled.div`
+  height: 39px;
+  width: 80px;
+  margin-bottom: 17px;
+  background: url(https://img2.shaadi.com/community/images/search-bann-sprite.png) no-repeat 40px -87px;
 `;
 
 styles.Desc = styled.div`

@@ -1,0 +1,110 @@
+.search_pg_bann{
+  border: solid 2px #dfe0e3;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  width: 730px;
+  margin: 20px auto 0; 
+}
+.search_pg_banup {
+  background: #fff;
+  height: 10px;
+  text-align: center;
+}
+.bann_head {
+  font-size: 20px;
+  color: #72727d;
+  margin: 6px 0 0;
+}
+.search_contact {
+  margin: 28px 0 19px;
+}
+.search_mail {
+  display: inline-block;
+  padding: 0 34px 0 60px;
+}
+.search_image {
+  height: 49px;
+}
+.srch_mail_icon {
+  background-image: url(https://img2.shaadi.com/community/images/search-bann-sprite.png);
+  background-repeat: no-repeat;
+  background-position: 20px top;
+  height: 32px;
+  width: 80px;
+}
+.search_txt {
+  font-size: 16px;
+  color: #72727d;
+}
+.search_mid {
+  display: inline-block;
+  padding: 0 40px 0 41px;
+  background: url(https://img2.shaadi.com/community/images/search-bann-border.gif) no-repeat left center;
+}
+.srch_chat_icon {
+  background-image: url(https://img2.shaadi.com/community/images/search-bann-sprite.png);
+  background-repeat: no-repeat;
+  background-position: left -38px;
+  height: 42px;
+  width: 42px;
+}
+.search_cal {
+  display: inline-block;
+  padding: 0 36px 0 37px;
+  background: url(https://img2.shaadi.com/community/images/search-bann-border.gif) no-repeat left center;
+}
+.srch_phn_icon {
+  background-image: url(https://img2.shaadi.com/community/images/search-bann-sprite.png);
+  background-repeat: no-repeat;
+  background-position: 40px -87px;
+  height: 39px;
+  width: 80px;
+}
+.srch_dwngrad {
+  background: #fff;
+}
+.srch_upgradebtn {
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 18px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #00bcd5;
+  border: 1px solid #00bcd5;
+  border-radius: 3px;
+}
+.srch_upgradebtn:hover {
+  background: #0194a8;
+  border: 1px solid #0194a8;
+}
+.srch_benefithead {
+  font-size: 16px;
+  color: #72727d;
+  line-height: 24px;
+  margin: 12px 0 0;
+}
+.srch_benefitlist {
+  font-size: 14px;
+  color: #72727d;
+  line-height: 18px;
+  padding: 0 0 12px;
+}
+.srch_pg_bandwn {
+    text-align: center;
+    height: 10px;
+}
+.srch_close {
+  background: url(https://img2.shaadi.com/community/icons/big-close-v2.png) no-repeat left -207px;
+  position: absolute;
+  cursor: pointer;
+  right: 20px;
+  top: 20px;
+  height: 15px;
+  width: 15px;
+}
+.srch_close:hover {
+  background: url(https://img2.shaadi.com/community/icons/big-close-v2.png) no-repeat left -231px;
+}
