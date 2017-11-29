@@ -6,6 +6,8 @@ import ArrowFunc from './ArrowFunc';
 import Destructuring from './Destructuring';
 import UpgradeBanner from './UpgradeBanner';
 import UpgradeBannerStatic from './UpgradeBannerStatic';
+import PureComponentSample from './PureComponentSample';
+
 
 class App extends Component {
   constructor(props){
@@ -17,17 +19,18 @@ class App extends Component {
 
     const arrData = ["one","two","three","four"];
 
-    console.log("1 - ",msg.startsWith("Hello"));
+    // console.log("1 - ",msg.startsWith("Hello"));
 
-    console.log("2 - ",msg.endsWith("react"));
+    // console.log("2 - ",msg.endsWith("react"));
 
-    console.log("3 - ",arrData.includes("three"));
+    // console.log("3 - ",arrData.includes("three"));
 
     //template literals
 
-    const name = "";
 
-    console.log(`Hello ${name || `pranay`}`);
+    
+
+   // console.log(`Hello ${name || `pranay`}`);
 
 
 
@@ -63,18 +66,22 @@ class App extends Component {
     const destructuring = false;
     const upgradebannerstatic = true;
     const upgradebanner = false;
+    const msg2 = `Hello ${this.props.name || `pranay`}`;
+    const prComponent = true;
 
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
+        <h1>{msg2}</h1>
         { letconst && <LetConst/>}
         { spredOperator && <SpredOperator/>}
         { arrowFunc && <ArrowFunc/>}
         { destructuring && <Destructuring/>}
         { upgradebannerstatic && <UpgradeBannerStatic />}
         { upgradebanner && <UpgradeBanner />}
+        {prComponent && <PureComponentSample/> }
       </div>
     );
   }

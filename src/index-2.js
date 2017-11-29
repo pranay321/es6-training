@@ -2,27 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class Hello extends React.Component{
-	constructor(props){
-		super(props);
-
-		console.log(this.props);
-	}
 	render(){
 		return (
 			<div>
-				<h1>Hello</h1>
+				<h1>Hello </h1>
 				<World/>
 			</div>
 		)
 	}
 }
 
-
-// const Hello = (props) => (
-// 	<div>
-// 		<h1>Hello {props.name}</h1>
-// 	</div>
-// )
 
 class World extends React.Component{
 	render(){
@@ -34,11 +23,33 @@ class World extends React.Component{
 	}
 }
 
-class HelloWorld extends React.Component {
+class HelloWorld extends React.Component{
+	constructor(){
+		super();
+		this.name = "shaadi";
+
+		this.state = {
+			name2: 'ajay',
+		}
+	}
+
+	getName(){
+		return "Pranay";
+	}
+
 	render(){
 		return (
 			<section>
-				<Hello name="pranay"/>
+				<Hello/>
+				<input type="text" />
+				<br/>
+				{ 2 + 2}
+				<br/>
+				{this.getName()}
+				<br/>
+				{this.name}
+				<br/>
+				{this.state.name2}
 			</section>
 		)
 	}
