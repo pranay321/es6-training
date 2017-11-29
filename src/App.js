@@ -62,7 +62,7 @@ class App extends Component {
     const arrowFunc = false;
     const destructuring = false;
     const upgradebannerstatic = true;
-    const upgradebanner = true;
+    const upgradebanner = false;
 
     return (
       <div className="App">
