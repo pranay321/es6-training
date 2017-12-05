@@ -4,8 +4,8 @@ import LetConst from './LetConst';
 import SpredOperator from './SpredOperator';
 import ArrowFunc from './ArrowFunc';
 import Destructuring from './Destructuring';
-import UpgradeBanner from './UpgradeBanner';
-import UpgradeBannerStatic from './UpgradeBannerStatic';
+//import UpgradeBanner from './UpgradeBanner';
+//import UpgradeBannerStatic from './UpgradeBannerStatic';
 import PureComponentSample from './PureComponentSample';
 
 
@@ -65,9 +65,10 @@ class App extends Component {
     const arrowFunc = false;
     const destructuring = false;
     const msg2 = `Hello ${this.props.name || `pranay`}`;
-    const upgradebannerstatic = false;
-    const upgradebanner = false;
+   // const upgradebannerstatic = false;
+    //const upgradebanner = false;
     const prComponent = true;
+    const learnLifeCycle = false;
 
     return (
       <div className="App">
@@ -79,8 +80,6 @@ class App extends Component {
         { spredOperator && <SpredOperator/>}
         { arrowFunc && <ArrowFunc/>}
         { destructuring && <Destructuring/>}
-        { upgradebannerstatic && <UpgradeBannerStatic />}
-        { upgradebanner && <UpgradeBanner />}
         {prComponent && <PureComponentSample/> }
       </div>
     );
