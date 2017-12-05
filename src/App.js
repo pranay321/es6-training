@@ -64,9 +64,9 @@ class App extends Component {
     const spredOperator = false;
     const arrowFunc = false;
     const destructuring = false;
+    const upgradebannerstatic = true;
+    const upgradebanner = false;
     const msg2 = `Hello ${this.props.name || `pranay`}`;
-   // const upgradebannerstatic = false;
-    //const upgradebanner = false;
     const prComponent = true;
     const learnLifeCycle = false;
 
